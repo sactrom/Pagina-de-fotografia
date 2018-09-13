@@ -1,0 +1,73 @@
+/*generales*/
+
+/*---------------------*/
+/*Header*/
+
+/*--------------*/
+/*body*/
+.galeria{
+
+   background-color: #d5c75f;
+   padding: 20px 0px;
+}
+.galeria1{
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+
+
+
+}
+.galeria2{
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+
+}
+.img-galeria{
+  width: 30%;
+  height: 147px;
+  margin: 1px;
+  box-shadow: 2px 2px #02010a;
+}
+.im1{
+  -moz-filter: blur(10px);
+  -webkit-filter:blur(10px);
+  filter: blur(10px);
+}
+ .im2{
+   -moz-filter: grayscale(100%);
+   -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+.im3{
+  -moz-filter: sepia(90%);
+  -webkit-filter:sepia(90%);
+  filter: sepia(90%);
+}
+
+
+/*--------------*/
+/*footer*/
+
+/*--------------*/
+/*Media query*/
+@media screen and (max-width:900px) {
+    /*Header*/
+
+      /*body*/
+      .img-galeria{
+        width: 100%;
+        height: auto;
+        margin: auto;
+
+
+
+      }
+  /*footer*/
+
+
+
+}
+/*---------*/
+/* Pseudo-clases*/

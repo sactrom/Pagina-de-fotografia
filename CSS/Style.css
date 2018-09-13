@@ -4,12 +4,17 @@ font-family: 'Dancing Script',cursive;
       src:url("https://fonts.googleapis.com/css?family=Dancing+Script")
 }
 *{margin: 0px;padding: 0px;}
+body{
+  background-color:  #02010a;
+}
 .contenido{
   width: 100%;
   max-width: 900px;
   margin: auto;
   overflow: hidden;
   font-family: 'Dancing Script',cursive;
+  animation-name: animacion;
+  animation-duration: 3s;
 }
 /*---------------------*/
 /*Header*/
@@ -17,7 +22,7 @@ header{
   width: 100%;
   overflow: hidden;
   background-color: #5b7989;
-  margin-bottom: 20px;
+
   line-height: 70px;
   color: #ffff;
   -webkit-border-radius:10px 10px 0px 0px;
@@ -52,7 +57,6 @@ header nav a{
   width: 100%;
   background-color: #82c3a6;
   padding: 20px 0px;
-
 }
 
 #imagePrincipal{
@@ -63,11 +67,14 @@ header nav a{
 
 #imagePrincipal img{
   width: 100%;
+  box-shadow: 2px 2px #02010a;
 }
 #ImagenesSecundarias{
   display: inline-block;
   overflow: hidden;
   padding: 20px 20px;
+  border: 0px;
+  margin: 0px;
   background-color: #d5c75f;
 }
 
@@ -92,6 +99,15 @@ header nav a{
   float: left;
   width: 45%;
 }
+#paisaje img{
+box-shadow: 2px 2px #02010a;
+  transition:transform 1s linear;
+}
+#retrato img{
+box-shadow: 2px 2px #02010a;
+  transition:transform 1s linear;
+}
+
 
 .active{
   text-decoration: none;
@@ -104,7 +120,8 @@ footer{
   display: inline-block;
   width: 100%;
   padding: 10px 0px;
-  margin-top: 20px;
+  margin: 0px;
+  border: 0px;
   background-color: #C6d5c5;
   -webkit-border-radius:0px 0px 10px 10px;
   -moz-border-radius:0px 0px 10px 10px;
@@ -142,7 +159,7 @@ footer h2{
       }
       /*body*/
       #imagePrincipal{
-        width: 60%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
       }
@@ -152,14 +169,14 @@ footer h2{
         padding: 20px 0px;
       }
       #retrato{
-        width: 60%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         float: none;
         padding: 20px 0px;
       }
       #paisaje{
-        width: 60%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         float: none;
@@ -182,3 +199,29 @@ footer h2{
 }
 /*---------*/
 /* Pseudo-clases*/
+#paisaje img:hover{
+
+  transform:rotate(10deg);
+  border: 2px solid #050505;
+  box-shadow: 5px 5px #82c3a6;
+}
+#retrato img:hover{
+
+transform: translate(20px,-5px);
+
+  border: 2px solid #050505;
+  box-shadow: 5px 5px #82c3a6;
+}
+
+@keyframes animacion {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+
+}
